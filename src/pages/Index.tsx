@@ -12,17 +12,28 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   // Logo data for the marquee
+  // const logoData = [
+  //   { id: 1, name: "Kenzo" },
+  //   { id: 2, name: "Badman" },
+  //   { id: 3, name: "MOF" },
+  //   { id: 4, name: "Taiso" },
+  //   { id: 5, name: "Fitfuel" },
+  //   { id: 6, name: "Everyday Fitness" },
+  //   { id: 6, name: "Anytime Fitness" },
+  //   { id: 6, name: "Gold's Gym"},
+  //   { id: 6, name: "Abs Fitness"},
+  // ];
   const logoData = [
-    { id: 1, name: "Kenzo" },
-    { id: 2, name: "Badman" },
-    { id: 3, name: "MOF" },
-    { id: 4, name: "Taiso" },
-    { id: 5, name: "Fitfuel" },
-    { id: 6, name: "Everyday Fitness" },
-    { id: 6, name: "Anytime Fitness" },
-    { id: 6, name: "Gold's Gym"},
-    { id: 6, name: "Abs Fitness"},
-  ];
+  { id: 1, src: "/logos/cult-fit.webp", alt: "Cult Fit" },
+  { id: 2, src: "/logos/classic-fitness.jpeg", alt: "Classic Fitness Academy" },
+  { id: 3, src: "/logos/gold.jpeg", alt: "Gold's Gym" },
+  { id: 4, src: "/logos/kenzo.png", alt: "Kenzo" },
+  { id: 5, src: "/logos/mof.png", alt: "Ministry of Fitness" },
+  { id: 6, src: "/logos/platinum.png", alt: "Platinum Luxurious Gym" },
+  { id: 7, src: "/logos/taiso.png", alt: "Taiso" },
+  { id: 7, src: "/logos/abs-fitness.png", alt: "Abs Fitness" },
+  { id: 7, src: "/logos/af.png", alt: "Anytime Fitness" },
+];
   
   return (
     <>
@@ -34,7 +45,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <FeaturedProducts />
-      <LogoMarquee logos={logoData} />
+      {/* <LogoMarquee logos={logoData} /> */}
       <PremiumInstallations />
       <TrustBadges />
       <Stats />
